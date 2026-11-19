@@ -1,0 +1,29 @@
+/* פאנל התאמה אישית — תצוגה מקדימה בלבד (לא נכלל בשופיפיי) */
+.cz-gear{position:fixed;z-index:96;left:12px;bottom:92px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(176,141,87,.35);background:rgba(20,14,11,.7);color:#d9c7a6;display:grid;place-items:center;cursor:pointer;opacity:.55;backdrop-filter:blur(6px);transition:opacity .3s,transform .6s cubic-bezier(.2,.75,.15,1)}
+.cz-gear svg{width:17px;height:17px}
+.cz-gear:hover{opacity:1;transform:rotate(90deg)}
+@media(min-width:960px){.cz-gear{bottom:18px}}
+.cz{position:fixed;z-index:97;left:12px;bottom:134px;width:min(332px,calc(100vw - 24px));max-height:calc(100svh - 170px);overflow:auto;
+  background:#FBF8F2;color:#1F1C19;border:1px solid rgba(31,28,25,.14);border-radius:16px;padding:16px 18px 18px;font:400 14px/1.5 Heebo,system-ui,sans-serif;box-shadow:0 30px 70px -20px rgba(0,0,0,.4)}
+@media(min-width:960px){.cz{bottom:62px}}
+.cz[hidden]{display:none}
+.cz__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.cz__head b{font:500 18px Heebo,sans-serif}
+.cz__x{background:none;border:0;color:inherit;font-size:24px;cursor:pointer;line-height:1}
+.cz__h{margin:14px 0 8px;font-size:11px;font-weight:700;letter-spacing:.14em;color:#7a716a}
+.cz__presets{display:grid;gap:8px}
+.cz__preset{display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(31,28,25,.12);background:#fff;color:inherit;cursor:pointer;font:600 14px Heebo,sans-serif;text-align:start;transition:border-color .3s}
+.cz__preset:hover,.cz__preset.is-on{border-color:#1F1C19}
+.cz__dots{display:inline-flex;padding-inline-start:5px}
+.cz__dots i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.15);margin-inline-start:-5px}
+.cz__colors{display:grid;gap:6px}
+.cz__color{display:grid;grid-template-columns:38px 1fr auto;align-items:center;gap:10px;cursor:pointer}
+.cz__color input{width:38px;height:30px;border:0;padding:0;background:none;cursor:pointer}
+.cz__color code{font-size:12px;color:#7a716a;direction:ltr}
+.cz__toggle{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.cz__actions{display:flex;gap:8px;margin-top:14px}
+.cz__actions button{flex:1;padding:11px;border-radius:999px;border:1px solid #1F1C19;background:#1F1C19;color:#FBF8F2;font:700 13px Heebo,sans-serif;cursor:pointer}
+.cz__actions .cz__danger{background:transparent;color:#1F1C19}
+.cz__tip{margin-top:10px;font-size:12px;color:#7a716a}
+#eh4.cz-editing [data-k]{outline:1px dashed color-mix(in srgb,var(--c-primary) 80%,transparent);outline-offset:3px;cursor:text}
+#eh4.cz-editing [data-k]:focus{outline:2px solid var(--c-primary);background:color-mix(in srgb,var(--c-primary) 8%,transparent)}
