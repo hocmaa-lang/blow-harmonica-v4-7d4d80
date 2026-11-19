@@ -317,3 +317,5 @@
   .v4-sheen{display:none}
   .v4-tile img,.v4-btn::after{transition:none}
 }
+
+html,body{font-family:"Heebo",system-ui,Arial,sans-serif}
